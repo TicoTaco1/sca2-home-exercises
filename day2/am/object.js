@@ -3,5 +3,11 @@
 // HINT: recursion may help here
 
 const hasFalsyValue = obj => {
-  return false;
+  if (obj == false || obj == null || obj == 0 || obj == '' || obj == NaN || obj == undefined){
+    return true;
+  }
+  else{
+    return false
+  }
 };
+console.log(hasFalsyValue(null))
